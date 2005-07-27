@@ -1,4 +1,5 @@
-Summary:	GTK2 client for MPD
+Summary:	GTK+2 client for MPD
+Summary(pl):	Klient GTK+2 dla MPD
 Name:		glurp
 Version:	0.11.6
 Release:	1
@@ -11,7 +12,11 @@ BuildRequires:	gtk+2-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-A GTK2 based graphical MPD client with simple and clean interface.
+A GTK+2 based graphical MPD client with simple and clean interface.
+
+%description -l pl
+Oparty na GTK+2 graficzny klient MPD z prostym i przejrzystym
+interfejsem.
 
 %prep
 %setup -q 
@@ -24,7 +29,7 @@ A GTK2 based graphical MPD client with simple and clean interface.
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
-		DESTDIR=$RPM_BUILD_ROOT
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
