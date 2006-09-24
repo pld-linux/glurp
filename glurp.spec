@@ -9,6 +9,7 @@ Source0:	http://dl.sourceforge.net/glurp/%{name}-%{version}.tar.gz
 # Source0-md5:	17d1c780fe006b51886d774e387d0269
 URL:		http://www.musicpd.org/glurp.shtml
 BuildRequires:	gtk+2-devel
+BuildRequires:	libglade2-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -19,7 +20,7 @@ Oparty na GTK+2 graficzny klient MPD z prostym i przejrzystym
 interfejsem.
 
 %prep
-%setup -q 
+%setup -q
 
 %build
 %configure
