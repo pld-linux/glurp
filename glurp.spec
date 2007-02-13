@@ -1,5 +1,5 @@
 Summary:	GTK+2 client for MPD
-Summary(pl.UTF-8):   Klient GTK+2 dla MPD
+Summary(pl.UTF-8):	Klient GTK+2 dla MPD
 Name:		glurp
 Version:	0.11.6
 Release:	1
